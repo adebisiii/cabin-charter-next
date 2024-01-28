@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header
       className={`fixed left-0 top-0 z-[5] transition-all flex w-full justify-between px-4 py-2 sm:px-6 lg:py-5 2xl:px-7 3xl:px-8 4xl:px-16 4xl:py-6 ${
-        isScrolled ? "isScrolling" : ""
+        isScrolled ? "is-scrolling" : ""
       }`}
     >
       <Logo/>
