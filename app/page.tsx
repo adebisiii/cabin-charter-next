@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Input } from "@/components/ui/input";
 import { CalendarIcon, MapPin } from "lucide-react";
@@ -13,14 +13,16 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
+import SectionTitle from "@/components/SectionTitle";
+
 
 export default function Home() {
   const [date, setDate] = useState<Date>();
 
   //Cumartesi günlerini kontrol et
-  const isSaturday = (date:any) => date.getDay() === 6;
+  const isSaturday = (date: any) => date.getDay() === 6;
 
-  const disabledDays = (date:any) => {
+  const disabledDays = (date: any) => {
     // Eğer tarih Cumartesi günü değilse devre dışı bırak
     return !isSaturday(date);
   };
@@ -28,7 +30,13 @@ export default function Home() {
   return (
     <main className="flex-grow">
       <div className="relative flex min-h-full items-end justify-center px-4 pb-28 pt-48 before:absolute before:left-0 before:top-0 before:z-[1] before:block before:h-1/4 before:w-full before:bg-gradient-to-b before:from-black/60 sm:flex-none sm:justify-start sm:px-0 sm:pb-20 sm:pl-6 sm:pt-[120px] md:pl-16 3xl:pb-[132px] 3xl:pt-[142px] 4xl:pl-[200px]">
-        <Image src="/images/1.webp" layout="fill" objectFit="cover" priority alt="Cabin Charter Banner" />
+        <Image
+          src="/images/1.webp"
+          layout="fill"
+          className="object-cover"
+          priority
+          alt="Cabin Charter Banner"
+        />
         <form
           className="relative z-[2] w-full max-w-[450px] rounded-lg bg-white p-6 shadow-2xl sm:m-0 sm:max-w-[380px] sm:p-7 sm:pt-9 md:max-w-[400px] md:shadow-none lg:rounded-xl xl:max-w-[460px] xl:p-9 4xl:max-w-[516px] 4xl:p-12"
           action=""
@@ -66,7 +74,11 @@ export default function Home() {
                     )}
                   >
                     <CalendarIcon color="#000000" className="mr-2 h-6 w-6" />
-                    {date ? format(date, "PPP") : <span className="text-[14px]">Pick a date</span>}
+                    {date ? (
+                      format(date, "PPP")
+                    ) : (
+                      <span className="text-[14px]">Pick a date</span>
+                    )}
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-auto p-0">
@@ -75,7 +87,7 @@ export default function Home() {
                     selected={date}
                     onSelect={setDate}
                     initialFocus
-                    disabled= {disabledDays}
+                    disabled={disabledDays}
                   />
                 </PopoverContent>
               </Popover>
@@ -86,6 +98,15 @@ export default function Home() {
           </div>
         </form>
       </div>
+      <section className="lg:container-fluid mt-12 pl-4 sm:pl-6 lg:mt-12">
+        <SectionTitle
+          title="Top Destinations For Boat Rentals"
+          description="Unsatiable It Considered Invitation He Traveling Insensible."
+        />
+     
+          
+     
+      </section>
     </main>
   );
 }
