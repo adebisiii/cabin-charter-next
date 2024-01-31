@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import SectionTitle from "@/components/SectionTitle";
 import SwiperComponents from "@/components/Swiper";
+import HowTo from "@/components/HowTo";
 
 export default function Home() {
   const [date, setDate] = useState<Date>();
@@ -98,7 +99,7 @@ export default function Home() {
           </div>
         </form>
       </div>
-      <section className="lg:container-fluid mt-12 pl-4 sm:pl-6 lg:mt-12">
+      <section className="lg:container mx-auto mt-12 pl-4 sm:pl-6 lg:mt-16">
         <header className="flex justify-between capitalize mb-4 md:mb-5 xl:mb-6">
           <SectionTitle
             title="Top Destinations For Boat Rentals"
@@ -106,6 +107,27 @@ export default function Home() {
           />
         </header>
           <SwiperComponents />
+      </section>
+      <section className="group/section instruction-section lg:container mt-12 pl-4 sm:pl-6 lg:mt-16">
+        <header className="flex justify-between capitalize mb-4 md:mb-5 xl:mb-6">
+          <SectionTitle
+            title="How to rent a boat"
+            description="Unsatiable it considered invitation he traveling insensible."
+          />
+        </header>
+        <HowTo />
+      </section>
+      <section className="group/section container mt-12 overflow-hidden lg:mt-16">
+        <header className="flex justify-between capitalize items-end mb-4 md:mb-5 xl:mb-6 gap-5">
+          <SectionTitle
+            title="Top boat rentals"
+            description="Unsatiable it considered invitation he traveling insensible."
+          />
+          <div><a className="inline-block whitespace-nowrap pr-4 text-sm font-bold leading-6 text-gray-light underline sm:pr-6 md:text-base lg:pr-0" href="/explore">See More</a></div>
+        </header>
+        <div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:gap-y-10">
+          
+        </div>
       </section>
     </main>
   );
