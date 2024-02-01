@@ -1,6 +1,6 @@
 import React from "react";
 
-function HowTo() {
+function HowToNormal() {
   return (
     <div className="hidden grid-cols-1 gap-5 md:grid-cols-2 xl:grid xl:grid-cols-4">
       <div className="group/item card-gradient flex flex-col justify-start rounded-xl border-2 p-6 transition-all duration-500 lg:p-7 4xl:p-12">
@@ -138,4 +138,4 @@ function HowTo() {
   );
 }
 
-export default HowTo;
+export default HowToNormal;
