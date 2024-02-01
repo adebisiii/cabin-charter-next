@@ -18,6 +18,8 @@ import SwiperComponents from "@/components/Swiper";
 import HowTo from "@/components/HowToSwiper";
 import HowToNormal from "@/components/HowToNormal";
 import HowToSwiper from "@/components/HowToSwiper";
+import YachtCard from "@/components/YachtCard";
+import FaqsBanner from "@/components/FaqsBanner";
 
 export default function Home() {
   const [date, setDate] = useState<Date>();
@@ -135,7 +137,19 @@ export default function Home() {
             </a>
           </div>
         </header>
-        <div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:gap-y-10"></div>
+        <div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:gap-y-10">
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+          <YachtCard />
+        </div>
+      </section>
+      <section className="w-full mt-6 sm:pl-6 px-4 2xl:px-4 3xl:px-8 4xl:px-16 relative">
+        <FaqsBanner />
       </section>
     </main>
   );

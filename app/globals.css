@@ -91,3 +91,7 @@
  color: #000000;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+

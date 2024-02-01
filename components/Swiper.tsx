@@ -16,15 +16,11 @@ const SwiperComponents = () => {
       <Swiper
         modules={[Navigation, Scrollbar, Pagination]}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.destination-button-next',
+          prevEl: '.destination-button-prev',
         }}
-        pagination={{
-          clickable: true,
-        }}
-        //scrollbar={{draggable: true}}
-        //onSlideChange={() => console.log("slide change")}
-        //onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
         breakpoints={{
           0: {
             slidesPerView: 1.2,
@@ -146,10 +142,10 @@ const SwiperComponents = () => {
         </SwiperSlide>
       </Swiper>
       {/* Özelleştirilmiş Navigasyon Butonları */}
-      <button className="inline-flex items-center justify-center focus:outline-none duration-200 active:scale-95 p-1 w-9 h-9 rounded-full border border-transparent bg-white text-primary focus:ring-gray-dark hover:enabled:bg-gray-900 hover:enabled:text-white destination-button-prev invisible absolute left-[25px] top-1/2 z-10 flex -translate-y-1/2 shadow-md !transition-all group-hover/section:visible group-hover/section:left-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
+      <button className="destination-button-prev inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-1 w-9 h-9 rounded-full border border-transparent bg-white text-primary focus:ring-gray-900 hover:enabled:bg-gray-900 hover:enabled:text-white invisible absolute left-[25px] top-1/2 z-10 flex -translate-y-1/2 shadow-md !transition-all group-hover/section:visible group-hover/section:left-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
         <ChevronLeftIcon className="w-6 h-6" />
       </button>
-      <button className="items-center justify-center focus:outline-none duration-200 active:scale-95 p-1 w-9 h-9 rounded-full border border-transparent bg-white text-primary focus:ring-gray-dark hover:enabled:bg-gray-900 hover:enabled:text-white destination-button-next invisible absolute right-[25px] top-1/2 z-10 flex -translate-y-1/2 shadow-md transition-all group-hover/section:visible group-hover/section:right-4 sm:group-hover/section:right-6 lg:group-hover/section:-right-[19px]">
+      <button className="destination-button-next inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-1 w-9 h-9 rounded-full border border-transparent bg-white text-primary focus:ring-gray-900 hover:enabled:bg-gray-900 hover:enabled:text-white invisible absolute right-[25px] top-1/2 z-10 flex -translate-y-1/2 shadow-md !transition-all group-hover/section:visible group-hover/section:right-4 sm:group-hover/section:right-6 lg:group-hover/section:-right-[19px]">
         <ChevronRightIcon className="w-6 h-6" />
       </button>
     </div>
