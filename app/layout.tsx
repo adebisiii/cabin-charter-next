@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
-const roboto = Roboto_Mono({
+const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap'
 
@@ -20,9 +21,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
     <html lang="en" className="h-full">
-      <body className="flex min-h-full flex-col">
+      <body className={cn('flex min-h-full flex-col' ,outfit.className)} suppressHydrationWarning={true}>
         <Header />
         {children}
         <Footer />
