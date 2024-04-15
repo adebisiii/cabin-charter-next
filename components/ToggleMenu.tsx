@@ -38,7 +38,7 @@ const ToggleMenu = () => {
           </SheetHeader>
           <ul className="pt-4">
             <li className="border-b border-gray-100 last:border-b-0">
-              <a className="flex items-center gap-3 pl-2 px-10 py-4 text-base capitalize text-gray-900 hover:bg-gray-100 bg-white" href="/">home</a>
+              <a className="flex items-center gap-3 pl-2 px-10 py-4 text-base capitalize text-gray-900 hover:bg-gray-100 bg-white" href="/">Home</a>
             </li>
             <li className="border-b border-gray-100 last:border-b-0">
               <a className="flex items-center gap-3 pl-2 px-10 py-4 text-base capitalize text-gray-900 hover:bg-gray-100 bg-white" href="/">Explore</a>

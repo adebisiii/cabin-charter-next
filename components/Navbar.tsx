@@ -1,27 +1,28 @@
 import Link from "next/link";
-import React from "react";
 
 const Navbar = () => {
+
+  
   return (
     <nav className="primary-nav hidden items-center justify-between md:flex md:gap-4">
       <ul className="hidden flex-wrap md:flex">
         <li>
-          <Link href="/" className="px-5 capitalize text-white">
+          <Link href="/" className="px-5 capitalize ">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/" className="px-5 capitalize text-white">
+          <Link href="/tour-list" className="px-5 capitalize">
             Explore
           </Link>
         </li>
         <li>
-          <Link href="/" className="px-5 capitalize text-white">
+          <Link href="/" className="px-5 capitalize">
             Pricing
           </Link>
         </li>
         <li>
-          <Link href="/" className="px-5 capitalize text-white">
+          <Link href="/" className="px-5 capitalize">
             Help
           </Link>
         </li>

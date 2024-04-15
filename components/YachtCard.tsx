@@ -38,10 +38,10 @@ const YachtCard = () => {
               </SwiperSlide>
             </Swiper>
             {/* Özelleştirilmiş Navigasyon Butonları */}
-            <button className="yacht-image-button-prev inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-0.5 w-7 h-7 rounded-full border border-transparent bg-white/70 hover:enabled:bg-white/100 focus:ring-white absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 shadow-md !transition-all focus:!ring-0 md:invisible md:flex md:disabled:hidden md:group-hover/item:visible top-boat-grid-0-listing-item-button-prev">
+            <button className="yacht-image-button-prev inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-0.5 w-7 h-7 rounded-full border border-transparent bg-white/70 hover:enabled:bg-white/100 focus:ring-white absolute left-4 top-1/2 z-10 -translate-y-1/2 shadow-md focus:!ring-0 md:invisible md:flex md:disabled:hidden md:group-hover/item:visible top-boat-grid-0-listing-item-button-prev">
               <ChevronLeftIcon className="w-6 h-6" />
             </button>
-            <button className="yacht-image-button-next inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-0.5 w-7 h-7 rounded-full border border-transparent bg-white/70 hover:enabled:bg-white/100 focus:ring-white absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 opacity-80 shadow-md !transition-all duration-300 focus:!ring-0 md:invisible md:flex md:disabled:hidden md:group-hover/item:visible md:group-hover/item:opacity-100 top-boat-grid-1-listing-item-button-next">
+            <button className="yacht-image-button-next inline-flex items-center justify-center focus:outline-none transition duration-200 active:scale-95 p-0.5 w-7 h-7 rounded-full border border-transparent bg-white/70 hover:enabled:bg-white/100 focus:ring-white absolute right-4 top-1/2 z-10 -translate-y-1/2 opacity-80 shadow-md focus:!ring-0 md:invisible md:flex md:disabled:hidden md:group-hover/item:visible md:group-hover/item:opacity-100 top-boat-grid-1-listing-item-button-next">
               <ChevronRightIcon className="w-6 h-6" />
             </button>
           </div>
