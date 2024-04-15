@@ -15,7 +15,6 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import SectionTitle from "@/components/SectionTitle";
 import SwiperComponents from "@/components/Swiper";
-import HowTo from "@/components/HowToSwiper";
 import HowToNormal from "@/components/HowToNormal";
 import HowToSwiper from "@/components/HowToSwiper";
 import YachtCard from "@/components/YachtCard";
@@ -62,7 +61,7 @@ export default function Home() {
             </p>
             <div className="relative mb-3">
               <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2 sm:pl-4">
-                <MapPin />
+                <MapPin className="w-5 h-5"/>
               </div>
               <Input
                 type="text"
@@ -80,7 +79,7 @@ export default function Home() {
                       !date && "text-muted-foreground"
                     )}
                   >
-                    <CalendarIcon color="#000000" className="mr-2 h-6 w-6" />
+                    <CalendarIcon color="#000000" className="mr-2 h-5 w-5" />
                     {date ? (
                       format(date, "PPP")
                     ) : (
