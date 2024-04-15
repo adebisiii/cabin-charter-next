@@ -1,6 +1,7 @@
-import { Ghost } from "lucide-react"
+import { Ghost, MapPin } from "lucide-react"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
+import { Input } from "./ui/input"
 
 
 const Sidebar = () => {
@@ -12,6 +13,13 @@ const Sidebar = () => {
                     Filter
                 </h5>
                 <Button variant="ghost" size="sm" className="text-gray-700 font-normal" type="reset">Reset</Button>
+            </div>
+            <div className="grid grid-cols-1 gap-8 px-5 pb-3 md:px-7 xl:p-0 xl:pb-0">
+                <div className="flex flex-col">
+                    <label className="block font-bold leading-7">
+                        <span className="font-normal font-medium">Search Destination</span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
