@@ -1,6 +1,5 @@
 import TourDetailCarousel from "@/components/TourDetailCarousel"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CalendarSearch } from "lucide-react"
+import { User } from "lucide-react"
 
 const TourDetail = () => {
   return (
@@ -8,7 +7,7 @@ const TourDetail = () => {
       <div className="max-w-[1440px] px-5 md:px-10 mx-auto">
         <div className="flex flex-col lg:flex-row md:px-10 gap-[50px] lg:gap-[100px]">
           {/* left column start */}
-          <div className="w-full md:w-auto flex-none max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
+          <div className="w-full md:w-auto flex- max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
             <TourDetailCarousel />
           </div>
           {/* left column end */}
@@ -32,31 +31,39 @@ const TourDetail = () => {
             {/* Tour Avaliable Dates Start */}
             <div className="mb-10">
               <div className="flex mb-2 text-md font-semibold">
-                Available Dates and Guests Capacity
+                Available Dates / Guests
               </div>
-              <div className="relative mb-3">
-                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2 sm:pl-4">
-                  <CalendarSearch className="w-5 h-5 text-slate-500" />
+              <div className="grid grid-cols-3 gap-2 text-sm">
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / 8
                 </div>
-                <Select>
-                  <SelectTrigger className="font-normal text-slate-500 pl-12 py-6 text-[14px] ring-0 ring-slate-300 focus:ring-0 focus-visible:ring-inset focus-visible:ring-slate-500">
-                    <SelectValue placeholder="Select Departure Day" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="3">
-                      <div className="flex !justify-between items-center">
-                        <span className="mr-4">24.08.2024</span>
-                        <span>9 Persons</span>
-                      </div>
-                    </SelectItem>
-                    <SelectItem value="7">
-                      <div className="flex !justify-between items-center">
-                        <span className="mr-4">31.08.2024</span>
-                        <span>3 Persons</span>
-                      </div>
-                    </SelectItem>
-                  </SelectContent>
-                </Select>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / 8
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / 11
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
+                <div className="border rounded-md text-center py-3 font-medium">
+                  24.09.2024 / Left 8 Guests
+                </div>
               </div>
             </div>
 
