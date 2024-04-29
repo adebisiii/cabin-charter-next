@@ -1,6 +1,7 @@
+import InfoCard from "@/components/InfoCard"
 import TourDetailCarousel from "@/components/TourDetailCarousel"
 import { Button } from "@/components/ui/button"
-import { Minus, Plus, User } from "lucide-react"
+import { AirVent, AlarmClockCheck, AlarmClockMinus, CalendarDays, CircleArrowOutDownRight, CircleArrowOutUpRight, Minus, Plus, Sunrise, Utensils } from "lucide-react"
 
 const TourDetail = () => {
   return (
@@ -10,7 +11,23 @@ const TourDetail = () => {
           {/* left column start */}
           <div className="w-full md:w-auto flex-[1.5] max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
             <TourDetailCarousel />
+            <div className="mt-8">
+              <h2 className="text-2xl font-semibold">On Board Equipment</h2>
+              <div className="mt-4 grid grid-cols-3 gap-6 md:grid-cols-4">
+
+                <InfoCard icon = {<Sunrise />} title="Duration" content="7 Days"/>
+                <InfoCard icon = {<CircleArrowOutDownRight />} title="Embarkation" content="Kemer"/>
+                <InfoCard icon= {<CircleArrowOutUpRight />} title="Disembarkation" content="Kemer" />
+                <InfoCard icon= {<AirVent />} title="With A/C" content="Yes" />
+                <InfoCard icon = {<CalendarDays  />} title="Departure Days " content="Friday"/>
+                <InfoCard icon = {<AlarmClockCheck  />} title="Check-in" content="15:30pm"/>
+                <InfoCard icon= {<AlarmClockMinus  />} title="Check-out" content="10:30am" />
+                <InfoCard icon= {<Utensils  />} title="Meals" content="Full Board" />
+
+              </div>
+            </div>
           </div>
+
           {/* left column end */}
 
           {/* right column start */}
@@ -31,7 +48,7 @@ const TourDetail = () => {
 
             {/* Tour Avaliable Dates Start */}
             <div className="border rounded-md p-6 shadow-md">
-            <div className="flex items-center justify-between py-2">
+              <div className="flex items-center justify-between py-2">
                 <p className="text-md font-semibold">Number of People </p>
                 <div className="flex items-center gap-4">
                   <Button variant="outline" size="icon">
