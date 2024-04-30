@@ -241,7 +241,7 @@ const TourDetail = () => {
                   <span className="block">€700</span>
                 </div>
               </div>
-              <Button className="mt-4 w-full py-6 text-base">RESERVE</Button>
+              <Button variant="submit" className="mt-4 w-full py-6 text-base">RESERVE</Button>
               <ul className="mt-3 xl:mt-5">
                 <li className="flex items-center justify-between py-1.5 text-base first:pt-0 last:border-t last:border-gray-300 last:pb-0">
                   <span className="font-normal">€ 700 * 2 Guest(s)</span>
