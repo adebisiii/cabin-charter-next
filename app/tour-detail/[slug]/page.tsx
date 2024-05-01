@@ -22,7 +22,7 @@ import {
 
 const TourDetail = () => {
   return (
-    <main className="w-full py-28">
+    <main className="w-full py-8 md:py-18">
       <div className="px-5 md:px-10 mx-auto">
         <div className="flex flex-col lg:flex-row md:px-10 gap-[50px] lg:gap-[100px]">
           {/* left column start */}
@@ -30,7 +30,7 @@ const TourDetail = () => {
             <TourDetailCarousel />
             <div className="mt-8">
               <h2 className="text-2xl font-semibold">On Board Equipment</h2>
-              <div className="mt-4 grid grid-cols-3 gap-6 md:grid-cols-4">
+              <div className="mt-4 grid grid-cols-2 gap-6 md:grid-cols-4">
                 <InfoCard
                   icon={<Sunrise />}
                   title="Duration"
