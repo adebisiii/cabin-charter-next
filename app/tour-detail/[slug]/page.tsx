@@ -22,7 +22,7 @@ import {
 
 const TourDetail = () => {
   return (
-    <main className="w-full py-8 md:py-18">
+    <main className="w-full py-8 md:py-24">
       <div className="px-5 md:px-10 mx-auto">
         <div className="flex flex-col lg:flex-row md:px-10 gap-[50px] lg:gap-[100px]">
           {/* left column start */}

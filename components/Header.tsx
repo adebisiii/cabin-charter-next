@@ -15,7 +15,7 @@ const Header = () => {
       const scrollTop = window.scrollY;
 
       // Belirli bir scroll değerine göre durumu kontrol et
-      const shouldChangeStyle = scrollTop > 100; // Örneğin, 100 piksel'den sonra değişiklik yap
+      const shouldChangeStyle = scrollTop > 5; // Örneğin, 100 piksel'den sonra değişiklik yap
 
       setIsScrolled(shouldChangeStyle);
     };
@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header
-      className={`transparent-header items-center left-0 top-0 z-[50] sticky transition-all flex w-full justify-between bg-white px-4 py-3.5 sm:bg-transparent sm:px-6 lg:py-6 2xl:px-7 3xl:px-8 4xl:px-16 4xl:py-9 ${isScrolled ? "is-scrolling" : ""
+      className={`transparent-header items-center fixed left-0 top-0 z-[50] transition-all flex w-full justify-between bg-white px-4 py-3.5 sm:bg-transparent sm:px-6 lg:py-6 2xl:px-7 3xl:px-8 4xl:px-16 4xl:py-9 ${isScrolled ? "is-scrolling" : ""
         } ${pathName !== '/' ?  "text-black" : "text-white"}`}
     >
       <Logo />

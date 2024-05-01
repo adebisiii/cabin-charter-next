@@ -12,7 +12,7 @@ import { Menu } from "lucide-react";
 
 const ToggleMenu = () => {
   return (
-    <aside className="md:hidden">
+    <aside className="md:hidden text-black">
       <Sheet>
         <SheetTrigger>
           <Menu />
